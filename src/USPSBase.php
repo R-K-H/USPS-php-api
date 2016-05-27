@@ -84,6 +84,8 @@ abstract class USPSBase
         'ExpressMailIntl'                 => 'ExpressMailIntlRequest',
         'PriorityMailIntl'                => 'PriorityMailIntlRequest',
         'FirstClassMailIntl'              => 'FirstClassMailIntlRequest',
+        'DeliveryConfirmationV4'          => 'DeliveryConfirmationV4.0Request',
+        'DelivConfirmCertifyV4'           => 'DelivConfirmCertifyV4.0Request',
     ];
     /**
      * Default options for curl.
