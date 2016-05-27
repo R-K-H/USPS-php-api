@@ -134,7 +134,8 @@ class PriorityLabel extends USPSBase
         $zip,
         $address2 = null,
         $zip4 = null,
-        $phone = null
+        $phone = null,
+        $email = null
     ) {
         $this->setField(5, 'FromFirstName', $firstName);
         $this->setField(6, 'FromLastName', $lastName);
@@ -146,6 +147,7 @@ class PriorityLabel extends USPSBase
         $this->setField(12, 'FromZip5', $zip);
         $this->setField(13, 'FromZip4', $zip4);
         $this->setField(14, 'FromPhone', $phone);
+        $this->setField(39, 'SenderEMail', $email);
 
         return $this;
     }
@@ -175,7 +177,8 @@ class PriorityLabel extends USPSBase
         $zip,
         $address2 = null,
         $zip4 = null,
-        $phone = null
+        $phone = null,
+        $email = null
     ) {
         $this->setField(15, 'ToFirstName', $firstName);
         $this->setField(16, 'ToLastName', $lastName);
@@ -187,6 +190,7 @@ class PriorityLabel extends USPSBase
         $this->setField(22, 'ToZip5', $zip);
         $this->setField(23, 'ToZip4', $zip4);
         $this->setField(24, 'ToPhone', $phone);
+        $this->setField(41, 'RecipientEMail', $email);
 
         return $this;
     }
