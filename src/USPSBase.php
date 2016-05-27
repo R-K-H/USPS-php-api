@@ -11,7 +11,7 @@ namespace USPS;
  */
 abstract class USPSBase
 {
-    const LIVE_API_URL = 'http://production.shippingapis.com/ShippingAPI.dll';
+    const LIVE_API_URL = 'https://secure.shippingapis.com/ShippingAPI.dll';
     const TEST_API_URL = 'http://production.shippingapis.com/ShippingAPITest.dll';
 
     /**
